@@ -1,12 +1,10 @@
-# d3.layout.grid
+# d3.layoutGrid V4
 
 > Lightweight grid layout designed for categorical data
+> forked from https://github.com/felixlaumon/d3.layout.grid
 
-![](demo.gif)
 
-Demo: http://felixlaumon.github.io/d3.layout.grid/examples/basic.html
-
-`d3.layout.grid` is designed to display categorical data, allowing users to sort and group by different categorical variables.
+`d3.layoutGrid` is designed to display categorical data, allowing users to sort and group by different categorical variables.
 
 To maintain flexibility and the possibility to animate between layout type (e.g. between grid and force layout), `d3.layout.grid` does not include animation logic, but set `x` and `y` coordinates to the data.
 
@@ -15,7 +13,7 @@ Like other classes in D3, `d3.layout.grid` is chainable.
 ## Quick Start
 
 ````js
-var grid = d3.layout.grid()
+var grid = d3.layoutGrid()
   .width(500)
   .height(1000)
   .data(data)
@@ -30,11 +28,11 @@ d3.selectAll('circle')
     .attr('fill', function (d) { return d.color; })
 ````
 
-See `examples/basic.html` and `examples/basic.js` for a complete example.
+See `example/index.html` for a complete example.
 
 ## API
 
-### grid = d3.layout.grid()
+### grid = d3.layoutGrid()
 
 Returns a new grid layout with the following default settings:
 
@@ -52,9 +50,7 @@ Data associated with the grid. Relayouting (triggered by `groupBy(...)` or `sort
 
 ### grid.groupBy(string | fn)
 
-Group data using [underscore's `_.groupBy`](http://underscorejs.org/#groupBy). 
-
-Will trigger relayout.
+Group data - will trigger relayout.
 
 ### grid.sort(groupComparator, dataComparator)
 
@@ -81,3 +77,4 @@ Force manual relayout of the grid
 ## License
 
 ISC. Copyright (c) 2014 Felix Lau.
+Modified by MBJE
