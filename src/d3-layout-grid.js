@@ -1,4 +1,4 @@
-function layoutGrid() {
+export default function () {
   function noop() {}
 
   function groupBy(data, iterator) {
@@ -109,5 +109,3 @@ function layoutGrid() {
 
   return chart
 }
-
-export default layoutGrid

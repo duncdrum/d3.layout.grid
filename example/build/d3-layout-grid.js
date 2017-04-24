@@ -4,7 +4,7 @@
   (factory((global.d3 = global.d3 || {})));
 }(this, (function (exports) { 'use strict';
 
-function layoutGrid() {
+var d3LayoutGrid = function () {
   function noop() {}
 
   function groupBy(data, iterator) {
@@ -114,9 +114,9 @@ function layoutGrid() {
   });
 
   return chart
-}
+};
 
-exports.layoutGrid = layoutGrid;
+exports.layoutGrid = d3LayoutGrid;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
