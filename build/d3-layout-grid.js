@@ -4,14 +4,6 @@
   (factory((global.d3 = global.d3 || {})));
 }(this, (function (exports) { 'use strict';
 
-/*eslint-disable */
-{
-  document.write(
-    '<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></script>'
-  );
-}
-/*eslint-enable */
-
 function layoutGrid() {
   function noop() {}
 
