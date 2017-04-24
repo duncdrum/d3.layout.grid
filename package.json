@@ -1,6 +1,6 @@
 {
   "name": "d3-layout-grid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lightweight grid layout designed for categorical data - for d3 V4",
   "main": "build/d3-layout-grid.js",
   "directories": {

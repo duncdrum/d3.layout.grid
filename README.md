@@ -1,4 +1,4 @@
-# d3.layoutGrid V4
+# d3.layoutGrid - D3 V4 version
 
 > Lightweight grid layout designed for categorical data
 > forked from https://github.com/felixlaumon/d3.layout.grid
